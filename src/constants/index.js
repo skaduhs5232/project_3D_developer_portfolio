@@ -46,7 +46,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "UI/UX Designer",
     icon: mobile,
   },
   {
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Data Analyst",
     icon: creator,
   },
 ];
@@ -116,32 +116,32 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Full-Stack Developer",
+    company_name: "Uni Christus",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jun 2023 - At the moment",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using Angular and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Full-Stack Developer",
+    company_name: "Sandiê",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Ago 2021 - At the moment",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining the company website for Sandiê using WordPress and other tools.",
+      "Collaborating with a cross-functional team of designers, product managers, and developers to create high-quality web pages.",
+      "Implementing responsive design and ensuring cross-browser compatibility to deliver a seamless user experience",
+      "Participating in code reviews and offering constructive feedback to enhance team performance.",
     ],
   },
-  {
+  /* {
     title: "Web Developer",
     company_name: "Shopify",
     icon: shopify,
@@ -166,100 +166,100 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
+  }, */
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+// const testimonials = [
+//   {
+//     testimonial:
+//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+//     name: "Sara Lee",
+//     designation: "CFO",
+//     company: "Acme Co",
+//     image: "https://randomuser.me/api/portraits/women/4.jpg",
+//   },
+//   {
+//     testimonial:
+//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
+//     name: "Chris Brown",
+//     designation: "COO",
+//     company: "DEF Corp",
+//     image: "https://randomuser.me/api/portraits/men/5.jpg",
+//   },
+//   {
+//     testimonial:
+//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+//     name: "Lisa Wang",
+//     designation: "CTO",
+//     company: "456 Enterprises",
+//     image: "https://randomuser.me/api/portraits/women/6.jpg",
+//   },
+// ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Consultório",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Development of a web application with a simple interface, using HTML, CSS, and JavaScript, for scheduling appointments, integrated with the Google Sheets API for data storage. The scheduling process is automated, allowing users to select the psychologist, date, and time, while preventing scheduling conflicts.",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "AppsScript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Html/Css",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/skaduhs5232/ConsultorioDePsico",
   },
   {
-    name: "Job IT",
+    name: "Doctor, Please!",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Inspired by the classic Papers, Please, my team and I developed a simple remake called Doctor Please! with a medical theme. The player takes on the role of a healthcare professional and must organize patient records, sending them to either the ER or a local clinic based on various criteria.",
     tags: [
       {
-        name: "react",
+        name: "C#",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Unity",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "UI Design",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/skaduhs5232/DoctorPlease-main",
   },
   {
-    name: "Trip Guide",
+    name: "BlockChain",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This project showcases a blockchain implementation entirely in Clojure. It demonstrates key concepts such as block creation, hashing, and chain management. The application allows users to understand how blockchain technology functions by providing a simple yet effective implementation.",
     tags: [
       {
-        name: "nextjs",
+        name: "Clojure",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "API",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Git",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/skaduhs5232/Block_Chain_Clojure",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

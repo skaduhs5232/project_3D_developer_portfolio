@@ -8,10 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
         options={{
@@ -19,15 +19,15 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
+          alt="web-development"
+          className="w-16 h-16 object-contain"
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -40,21 +40,33 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a skilled software developer with experience in{" "}
+        <span className="text-[#007ACC] font-bold text-lg"> TypeScript</span>,{" "}
+        <span className="text-[#F7DF1E] font-bold text-lg"> JavaScript</span>,{" "}
+        <span className="text-[#FF6C37] font-bold text-lg"> Java</span>,{" "}
+        <span className="text-[#306998] font-bold text-lg"> Python</span>, and
+        expertise in frameworks like{" "}
+        <span className="text-[#DD1B16] font-bold text-lg"> Angular</span> and{" "}
+        <span className="text-[#61DBFB] font-bold text-lg"> React</span>. I have
+        strong knowledge in{" "}
+        <span className="text-[#00599C] font-bold text-lg"> C#</span>,{" "}
+        <span className="text-[#198CE7] font-bold text-lg"> R</span>,{" "}
+        <span className="text-[#777BB4] font-bold text-lg"> PHP</span>,{" "}
+        <span className="text-[#44CC11] font-bold text-lg"> Clojure</span>, and
+        Unity. I am quick to learn new technologies and work closely with
+        clients to create efficient, scalable, and user-friendly solutions
+        focused on solving real-world problems. Let's work together to bring
+        your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
