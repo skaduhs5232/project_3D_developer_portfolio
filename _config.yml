@@ -1,0 +1,42 @@
+# Arquivo básico de configuração para Jekyll (_config.yml)
+
+# Título do site
+title: "Nome do Seu Site"
+description: "Descrição do seu site para aparecer em motores de busca"
+url: "https://skaduhs5232.github.io/ThiagoSampaioPortifolio/" # URL do site
+baseurl: "https://skaduhs5232.github.io/ThiagoSampaioPortifolio/" # Defina se seu site estiver em um subdiretório, como "/blog"
+
+# Arquivos e diretórios a serem ignorados
+exclude:
+  - "assets/css/style.scss"  # Exclui o SCSS inexistente
+  - "docs"                   # Exclui a pasta 'docs' se ela não existe
+
+# Permite que o Jekyll use apenas arquivos CSS
+sass:
+  style: compressed  # Opcional, controla a compressão do CSS gerado, remova se não usar SCSS
+
+# Plugins opcionais, remova se não precisar
+plugins:
+  - jekyll-seo-tag         # Plugin para SEO
+  - jekyll-sitemap         # Cria um sitemap.xml automaticamente
+  - jekyll-feed            # Cria um feed RSS automaticamente
+  - jekyll-paginate        # Adiciona paginação em blogs
+  - jekyll-relative-links  # Ajusta links relativos automaticamente
+
+# Configuração para markdown
+markdown: kramdown
+
+# Tema do Jekyll
+theme: minima  # ou o tema que você está usando
+
+# Configurações para GitHub Pages (caso esteja publicando lá)
+github:
+  is_project_page: true
+
+# Build futura e de rascunhos
+future: true   # Permite posts com data futura
+show_drafts: false
+
+# Permissões e metadados
+author: "Seu Nome"
+email: "seu-email@exemplo.com"
