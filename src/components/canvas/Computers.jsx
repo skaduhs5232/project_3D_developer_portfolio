@@ -51,7 +51,7 @@ const ComputersCanvas = () => {
       {isMobile ? (
         // Fallback para dispositivos móveis: imagem estática
         <img
-          src="./src/assets/carrent.png"
+          src="/src/assets/carrent.png"
           alt="Computador 3D"
           style={{ width: '100%', height: 'auto' }}
         />
