@@ -1,21 +1,20 @@
 # Arquivo básico de configuração para Jekyll (_config.yml)
 
-# Título do site
+# Informações do site
 title: "Nome do Seu Site"
 description: "Descrição do seu site para aparecer em motores de busca"
-url: "https://skaduhs5232.github.io/ThiagoSampaioPortifolio/" # URL do site
-baseurl: "https://skaduhs5232.github.io/ThiagoSampaioPortifolio/" # Defina se seu site estiver em um subdiretório, como "/blog"
-source: ./docs
-# Arquivos e diretórios a serem ignorados
+url: "https://skaduhs5232.github.io" # URL raiz do site
+baseurl: "/ThiagoSampaioPortifolio"  # Subdiretório do projeto (se aplicável)
+
+# Arquivos e diretórios a serem ignorados pelo Jekyll
 exclude:
-  - "assets/css/style.scss"  # Exclui o SCSS inexistente
-                  # Exclui a pasta 'docs' se ela não existe
+  - "README.md"  # Exemplo, exclua o que não quer incluir na build
 
-# Permite que o Jekyll use apenas arquivos CSS
+# Configurações para Sass (se estiver usando SCSS)
 sass:
-  style: compressed  # Opcional, controla a compressão do CSS gerado, remova se não usar SCSS
+  style: compressed  # Remove para CSS padrão
 
-# Plugins opcionais, remova se não precisar
+# Plugins opcionais, instale apenas os necessários no Gemfile
 plugins:
   - jekyll-seo-tag         # Plugin para SEO
   - jekyll-sitemap         # Cria um sitemap.xml automaticamente
@@ -23,20 +22,20 @@ plugins:
   - jekyll-paginate        # Adiciona paginação em blogs
   - jekyll-relative-links  # Ajusta links relativos automaticamente
 
-# Configuração para markdown
+# Configuração para Markdown
 markdown: kramdown
 
 # Tema do Jekyll
-theme: minima  # ou o tema que você está usando
+theme: minima  # Substitua pelo tema escolhido
 
-# Configurações para GitHub Pages (caso esteja publicando lá)
+# Configurações adicionais para GitHub Pages
 github:
   is_project_page: true
 
-# Build futura e de rascunhos
-future: true   # Permite posts com data futura
-show_drafts: false
+# Configurações para posts
+future: true       # Permite posts com data futura
+show_drafts: false # Mostra rascunhos (false para não exibir)
 
-# Permissões e metadados
+# Permissões e metadados do autor
 author: "Seu Nome"
 email: "seu-email@exemplo.com"
