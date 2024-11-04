@@ -5,11 +5,11 @@ title: "Nome do Seu Site"
 description: "Descrição do seu site para aparecer em motores de busca"
 url: "https://skaduhs5232.github.io/ThiagoSampaioPortifolio/" # URL do site
 baseurl: "https://skaduhs5232.github.io/ThiagoSampaioPortifolio/" # Defina se seu site estiver em um subdiretório, como "/blog"
-
+source: ./docs
 # Arquivos e diretórios a serem ignorados
 exclude:
   - "assets/css/style.scss"  # Exclui o SCSS inexistente
-  - "docs"                   # Exclui a pasta 'docs' se ela não existe
+                  # Exclui a pasta 'docs' se ela não existe
 
 # Permite que o Jekyll use apenas arquivos CSS
 sass:
